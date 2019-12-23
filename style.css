@@ -44,7 +44,12 @@ body {
     background-image: linear-gradient(to bottom, transparent, transparent 50%, rgba(0, 0, 0, .04));
     box-shadow: inset 0 0 0 1px rgba(255, 255, 255, .05), inset 0 1px 0 0 rgba(255, 255, 255, .45), inset 0 -1px 0 0 rgba(255, 255, 255, .15), 0 1px 0 0 rgba(255, 255, 255, .15);
     text-shadow: 0 1px rgba(255, 255, 255, .4);
+    transition: background-image 0.07s;
 
+}
+
+.tapped {
+    background-image: linear-gradient(to bottom, transparent, transparent 20%, rgba(0, 0, 0, 0.1));
 }
 
 .btn:hover {
@@ -58,7 +63,7 @@ body {
     display: flex;
     align-items: flex-end;
     justify-content: right;
-    font-size: 4rem;
+    font-size: 3rem;
     height: 80px;
     border: none;
     background-color: #252525;
@@ -68,11 +73,12 @@ body {
     padding-left: 10px;
     padding: 5px;
     text-align: end;
+    overflow: hidden;
 }
 .history {
     font-weight: 300;
-    font-size: 2rem;
     height: 50px;
+    font-size: 2rem;
     border-bottom: 1px solid rgba(255, 226, 188,0.5);
 }
 .input {
